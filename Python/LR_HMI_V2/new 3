@@ -1,0 +1,17 @@
+    def Start(self, *args):
+        self.FormerAllure = self.Allure
+        New_Allure=self.Allure
+#        Start()
+        print("Changement de mode", New_Allure ,"  ",self.FormerAllure)
+
+    def Stop(self, *args):
+        self.FormerAllure = self.Allure
+        New_Allure=self.Allure
+#        Stop()
+        print("Changement de mode", New_Allure ,"  ",self.FormerAllure)
+
+    def Backward(self, *args):
+       self.FormerAllure = self.Allure
+       New_Allure=self.Allure
+ #      Backward()
+       print("Changement de mode", New_Allure ,"  ",self.FormerAllure)

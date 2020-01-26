@@ -1,0 +1,21 @@
+class xxxSetTrimmer:
+    def __init__(self,name):        # name is the name of the Servo, and
+        CtrlServerLst = []  # ControlServers without the HMI aspect
+        CtrlPointLoco = []
+        CtrlPointServo = []
+        CFG1 = CFG.XMLConfig("ControlServer.xml", "Locomotive", "TrackSwitch")
+        CtrlServerLst, CtrlPointLoco, CtrlPointServo = CFG1.ParseXML()
+
+
+        subWindow = Tk()
+        subWindow.wm_title= ("Trim Window")
+        subWindow.winfo_toplevel().title("Changing the min and max values for piloting the servo")
+        subWindow.withdraw()  # Do not display root window
+
+        CtrlPoint = CtrlPointServo[0]  # Get the Control Server aspect
+
+        app1 = ChangeTrim(subWindow, CtrlPoint, 2)  # Start the HMI
+
+        subWindow.mainloop()
+#        print("##################################")
+#        print(app1.hmi.LeftValue, app1.hmi.RightValue)

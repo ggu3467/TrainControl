@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ControlledDevices>
+	<Locomotive>
+		<name>La Montagnarde 1</name>
+		<type>Loco</type>
+		<ip>192.168.1.24</ip>
+	</Locomotive>
+	
+	<Locomotive>
+		<name>Loco 2</name>
+		<type>Loco</type>
+		<ip>192.168.1.47</ip>
+	</Locomotive>
+	
+	<Locomotive>
+		<name>Loco Demo 3</name>
+		<type>Loco</type>
+		<ip>192.168.1.56</ip> 
+	</Locomotive>
+	
+	<TrackSwitch>
+		<name>TrackSwitch 1</name>
+		<type>Servo</type>
+		<ip>192.168.1.49</ip>
+		<TrimMin1>10</TrimMin1>
+		<TrimMax1>170</TrimMax1>
+		<TrimMin2>17</TrimMin2>
+		<TrimMax2>177</TrimMax2>
+	</TrackSwitch>
+	
+	<TrackSwitch>
+		<name>TrackSwitch 2</name>
+		<type>Servo</type>
+		<ip>192.168.1.108</ip> 
+		<TrimMin1>5</TrimMin1>
+		<TrimMax1>175</TrimMax1>
+		<TrimMin2>6</TrimMin2>
+		<TrimMax2>176</TrimMax2>
+		<TrimMin3>7</TrimMin3>
+		<TrimMax3>177</TrimMax3>
+	</TrackSwitch>
+	<TrackSwitch>
+		<name> XXXXX 3</name>
+		<type>Servo</type>
+		<ip>192.168.1.118</ip>
+		<TrimMin1>5</TrimMin1>
+		<TrimMax1>175</TrimMax1>
+		<TrimMin2>6</TrimMin2>
+		<TrimMax2>176</TrimMax2>
+		<TrimMin3>7</TrimMin3>
+		<TrimMax3>177</TrimMax3>
+	</TrackSwitch>
+</ControlledDevices>
