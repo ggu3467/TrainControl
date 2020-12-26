@@ -163,7 +163,7 @@ class ControlPointIHM(CtrlServer):
 
         frameTitre = tk.Frame(Locomotive, width=700, borderwidth = 5, height=30,bg='dark blue', relief="sunken", highlightcolor="red", highlightthickness=2 )
         frameTitre.grid(row=0, column=14)
-        LabelTitre = tk.Label(frameTitre, text="*** Control Center ***", font="Arial 14", height=2, bg='light blue')
+        LabelTitre = tk.Label(frameTitre, text="### Control Center ###", font="Arial 14", height=2, bg='light blue')
         LabelTitre.grid(row=0, column=14)
 
         x        = 2
