@@ -1,0 +1,26 @@
+# Lines starting with `#` are comments.
+
+# Ignore files called 'file.ext'
+_Total.txt
+_TST*.*
+*Trace*.*
+
+# Ignoring files with full path.
+# This matches files in the root directory and subdirectories too.
+# i.e. otherfile.ext will be ignored anywhere on the tree.
+FctTemplate/*
+otherfile.ext
+
+# Ignoring directories
+# Both the directory itself and its contents will be ignored.
+__pycache__
+Lib
+.vscode
+latex
+html
+venv
+
+
+# Glob pattern can also be used here to ignore paths with certain characters.
+# For example, the below rule will match both build/ and Build/
+[bB]uild/
