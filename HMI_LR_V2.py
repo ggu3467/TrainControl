@@ -74,7 +74,7 @@ class CtrlServer:
         self.PwrWidget.config(bg='light blue')
         ESP.SendData(ESP.MsgBackwardOrder, self.CP.numCtrlPoint)
     def SetPower(self, PowerValue):
-        print("valeur de PowerValue",PowerValue)
+        print("PowerValue is:",PowerValue)
         print("==>Set Power:", self.CP.name,':', PowerValue)
         ESP.MsgPowerOrder[1]=int(PowerValue)
         ESP.SendData(ESP.MsgPowerOrder, self.CP.numCtrlPoint)
