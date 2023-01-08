@@ -46,7 +46,7 @@ class UDP_comm:
         # Get the host IP address.
         #        if your PC / Host have several Ethernet/IP port,
         #        you might not get the IP address you want !!!!!!!!
-        self.ipLocal = socket.gethostbyname(socket.gethostname())
+        self.ipLocal = '192.168.1.119' # socket.gethostbyname(socket.gethostname())
 
         # The list of Server from
         self.ServerLst  = []            # Array of server with IP, Port and name
@@ -81,8 +81,8 @@ class UDP_comm:
 
         DestAdr =  self.ServerLst[numLoco].ip
         port    =  self.ServerLst[numLoco].port
-        self.UDPClientSocket[numLoco].sendto(Msg, (DestAdr, port) )
         print("Dest Adr, Port:"+DestAdr+" - "+str(port)+ " Msg: "+str(Msg[0])+" - "+str(Msg[1])+" - "+str(Msg[2]))
+        self.UDPClientSocket[numLoco].sendto(Msg, (DestAdr, port) )
         time.sleep(0.100)
         try:
             msg,addr = self.UDPClientSocket[numLoco].recvfrom(self.CTE.SIZE_MESSAGE)

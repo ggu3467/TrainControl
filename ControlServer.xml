@@ -15,7 +15,7 @@
 	<Locomotive>
 		<name>Loco Demo 3</name>
 		<type>Loco</type>
-		<ip>192.168.1.56</ip> 
+		<ip>192.168.1.53</ip>
 	</Locomotive>
 	
 	<TrackSwitch>
